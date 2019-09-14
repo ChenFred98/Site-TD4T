@@ -1,0 +1,249 @@
+/*FONTS*/
+@font-face {
+    font-family: "Atlantic Cruise";
+    src: url("./fonts/Atlantic Cruise.woff") format("woff");
+}
+@font-face {
+    font-family: "Pizzicato";
+    src: url("./fonts/Pizzicato.woff") format("woff");
+}
+
+/* HEADER*/
+#mobile-logo{
+    display:none;
+}
+#header{
+    background-image: url("../photos/Jumbotron.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    margin-bottom: -94px;
+}
+#header .top-header {
+    font-family: 'Atlantic Cruise', "Pizzicato";
+    background: rgba(0,0,0,0.4);
+    position: fixed;
+    z-index: 99;
+    padding-top: 19.5px;
+    padding-bottom: 9.5px;
+}
+#header img{
+    height: 65px;
+}
+#header nav{
+    display: block;
+    float: right;
+    text-align: right;
+    font-weight: 700;
+    font-size: 50px;
+    padding-right: 0px;
+}
+#header a.custom-menu-item {
+    color: #fff;
+    float: right;
+    padding-top: 10px;
+    margin-right: 20px;
+    font-size: 16px;
+    line-height: 26px;
+}
+#header a.custom-menu-item:hover {
+    color: #036100;
+    text-decoration: none;
+}
+
+
+#header .bottom-header{
+    padding-top: 350px;
+    padding-bottom: 280px;
+}
+#header .bottom-header-font{
+    font-family: 'Atlantic Cruise', "Pizzicato";
+    font-size:80px;
+    font-weight:700;
+    color:#ffffff;
+    text-align: center;
+}
+#header .big-button-row{
+    padding-top:20px;
+}
+
+.big-button{
+    width: auto;
+    height: 63px;
+    margin: 0 15px;
+    padding: 0 70px;
+    display: inline-block;
+    font-weight: 700;
+    min-width: 242px;
+    font-size: 16px;
+    font-family: 'Lato', "Open sans";    
+    color: #fff;
+}
+.big-button:hover{
+    text-decoration: none;
+}
+
+.big-button-one{
+    height:100%;
+    line-height: 57px;
+    float:right;
+    background: rgba(255,255,255,.2);
+    border: 3px solid rgba(255,255,255,.2);
+    border-radius: 3px;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+.big-button-one:hover{
+    background: rgba(255,255,255,.7);
+    color : rgb(0,0,0);
+}
+
+.big-button-two{
+    height:100%;
+    line-height: 57px;
+    background:#036100;
+    border: 3px solid #036100;
+    border-radius: 3px;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+.big-button-two:hover{
+    color: #036100;
+    background: #47cb00;
+    border: 3px solid #47cb00;
+}
+
+/* SECTIONS */
+.anchor{
+    z-index: -1;
+    padding-top:94px;
+    display: block;
+    background: transparent;
+}
+section.custom-section-odd{
+    background: url('../photos/Fond\ blanc.png');
+    background-size:cover;
+    background-repeat: no-repeat;
+    margin-bottom: -94px;
+    padding-bottom: 80px;
+}
+.section-header{
+    padding: 20px 0;
+}
+.odd-section-header-font{
+    text-align: center;
+    color:#000000;
+    font-family: 'Atlantic Cruise', "Pizzicato";
+    font-size: 45px;
+    font-weight: 700;
+}
+.odd-section-font{
+    padding: 0 20px;
+    text-align: center;
+    color:#000000;
+    font-size: 16px;
+    font-family: 'Lato', "Open sans";
+    text-align: justify;
+}
+
+
+section.custom-section-even{
+    background: url('../photos/Fond\ vert.png');
+    background-size:cover;
+    background-repeat: no-repeat;
+    padding-bottom: 80px;
+    margin-bottom: -94px;
+}
+.even-section-header-font{
+    text-align: center;
+    color:#ffffff;
+    font-family: 'Atlantic Cruise', "Pizzicato";
+    font-size: 45px;
+    font-weight: 700;
+}
+.even-section-font{
+    padding: 0 20px;
+    text-align: center;
+    color:#ffffff;
+    font-size: 16px;
+    font-family: 'Lato', "Open sans";
+    text-align: justify;
+}
+.even-section-font a{
+    color:#ffffff;
+    font-weight:1000;
+}
+
+.custom-google-map{
+    height:100%;
+}
+
+.custom-section-contact{
+    padding-bottom: 80px;
+}
+
+.top-footer{
+    background : #292825;
+    padding-top : 10px;
+}
+.footer-heading{
+    color:#ffffff;
+    font-family: 'Atlantic Cruise', "Pizzicato";
+    font-size: 23px;
+    font-weight: 700;
+    text-align: center; 
+}
+.bottom-footer{
+    background:#242320;
+    padding : 5px;
+}
+.bottom-footer-font{
+    color:#ffffff;
+    font-size: 15px;
+    text-align: center;
+}
+
+/* SPONSORS SLIDER */
+.custom-carousel{
+    text-align: center;
+}
+
+/*TABLET VERSION*/
+@media screen and (max-width : 768px) {
+    #mobile-logo{
+        display:block;
+    }
+    #desktop-logo{
+        display:none;
+    }
+
+}
+@media screen and (max-width : 400px){
+    .item-to-hide{
+        display:none;
+    }
+    #header a.custom-menu-item{
+        margin: 0;
+    }
+    #header nav ul{
+        display:block;
+    }
+    #header nav ul li{
+        display:inline-block;
+    }
+    div.logo{
+        width:auto;
+    }
+    div.menu{
+        width:auto;
+    }
+    .big-button-one{
+        float:none;
+    }
+    .big-button-row{
+        text-align: center;
+    }
+}
